@@ -9,7 +9,7 @@ export class Table extends Component {
   };
 
   _renderChildren(props) {
-    return React.Children.map(props.children, child =>
+    return React.Children.map(props.children, child =>   
       React.cloneElement(
         child,
         props.borderStyle && child.type.displayName !== 'ScrollView' ? { borderStyle: props.borderStyle } : {}
